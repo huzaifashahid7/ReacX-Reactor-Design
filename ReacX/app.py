@@ -3,6 +3,39 @@ from components.inputs import get_user_inputs
 from components.calculations import calculate_values
 from components.plot import show_plot
 import streamlit.components.v1 as components
+import streamlit as st
+
+# Inject custom CSS directly (no need for separate file)
+def local_css():
+    st.markdown(
+        """
+        <style>
+        /* Custom CSS */
+        body {
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+            font-weight: bold;
+        }
+        .stButton > button {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px 20px;
+        }
+        .stTextInput > div > input {
+            border: 2px solid #4CAF50;
+            border-radius: 6px;
+        }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+# Call the function at the top of your app
+local_css()
 
 
 # ✅ Google Analytics integration
