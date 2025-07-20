@@ -74,7 +74,36 @@ Whether you are here to explore my work or simply browsing through, I hope you e
 </p>
 """, unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True)
-
+# CONTACT SECTION
+st.markdown("<div class='section'>", unsafe_allow_html=True)
+st.markdown("""
+<h3 style='font-family: "Times New Roman", serif; font-weight: bold; color: #000;'>
+    Contact
+</h3>
+""", unsafe_allow_html=True)
+st.markdown("""
+<div class='contact-item' style='font-family: "Times New Roman", serif;'>
+    <img src='https://cdn-icons-png.flaticon.com/512/732/732200.png' class='icon'/>
+    <a href="mailto:huzaifashahid569@gmail.com">huzaifashahid569@gmail.com</a>
+</div>
+<div class='contact-item' style='font-family: "Times New Roman", serif;'>
+    <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' class='icon'/>
+    <a href="https://www.linkedin.com/in/huzaifashahid7" target="_blank">linkedin.com/in/huzaifashahid7</a>
+</div>
+<div class='contact-item' style='font-family: "Times New Roman", serif;'>
+    <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' class='icon'/>
+    <a href="https://github.com/huzaifashahid7" target="_blank">github.com/huzaifashahid7</a>
+</div>
+<div class='contact-item' style='font-family: "Times New Roman", serif;'>
+    <img src='https://cdn-icons-png.flaticon.com/512/684/684908.png' class='icon'/>
+    Location: Kolkata, India
+</div>
+<div class='contact-item' style='font-family: "Times New Roman", serif;'>
+    <img src='https://cdn-icons-png.flaticon.com/512/64/64572.png' class='icon'/>
+    Developer: Huzaifa Shahid
+</div>
+""", unsafe_allow_html=True)
+st.markdown("</div>", unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
