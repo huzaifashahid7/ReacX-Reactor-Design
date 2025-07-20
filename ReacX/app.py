@@ -2,6 +2,8 @@ import streamlit as st
 from components.inputs import get_user_inputs
 from components.calculations import calculate_values
 from components.plot import show_plot
+import streamlit.components.v1 as components
+
 
 # ✅ Google Analytics integration
 components.html("""
