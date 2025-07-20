@@ -3,40 +3,6 @@ from components.inputs import get_user_inputs
 from components.calculations import calculate_values
 from components.plot import show_plot
 import streamlit.components.v1 as components
-import streamlit as st
-
-# Inject custom CSS directly (no need for separate file)
-def local_css():
-    st.markdown(
-        """
-        <style>
-        /* Custom CSS */
-        body {
-            background-color: #f9f9f9;
-        }
-        h1, h2, h3 {
-            color: #2c3e50;
-            font-weight: bold;
-        }
-        .stButton > button {
-            background-color: #4CAF50;
-            color: white;
-            font-weight: bold;
-            border-radius: 8px;
-            padding: 10px 20px;
-        }
-        .stTextInput > div > input {
-            border: 2px solid #4CAF50;
-            border-radius: 6px;
-        }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-# Call the function at the top of your app
-local_css()
-
 
 # ✅ Google Analytics integration
 components.html("""
@@ -110,36 +76,6 @@ Whether you are here to explore my work or simply browsing through, I hope you e
 """, unsafe_allow_html=True)
 st.markdown("</div>", unsafe_allow_html=True)
 
-# CONTACT SECTION
-st.markdown("<div class='section'>", unsafe_allow_html=True)
-st.markdown("""
-<h3 style='font-family: "Times New Roman", serif; font-weight: bold; color: #000;'>
-    Contact
-</h3>
-""", unsafe_allow_html=True)
-st.markdown("""
-<div class='contact-item' style='font-family: "Times New Roman", serif;'>
-    <img src='https://cdn-icons-png.flaticon.com/512/732/732200.png' class='icon'/>
-    <a href="mailto:huzaifashahid569@gmail.com">huzaifashahid569@gmail.com</a>
-</div>
-<div class='contact-item' style='font-family: "Times New Roman", serif;'>
-    <img src='https://cdn-icons-png.flaticon.com/512/174/174857.png' class='icon'/>
-    <a href="https://www.linkedin.com/in/huzaifashahid7" target="_blank">linkedin.com/in/huzaifashahid7</a>
-</div>
-<div class='contact-item' style='font-family: "Times New Roman", serif;'>
-    <img src='https://cdn-icons-png.flaticon.com/512/25/25231.png' class='icon'/>
-    <a href="https://github.com/huzaifashahid7" target="_blank">github.com/huzaifashahid7</a>
-</div>
-<div class='contact-item' style='font-family: "Times New Roman", serif;'>
-    <img src='https://cdn-icons-png.flaticon.com/512/684/684908.png' class='icon'/>
-    Location: Kolkata, India
-</div>
-<div class='contact-item' style='font-family: "Times New Roman", serif;'>
-    <img src='https://cdn-icons-png.flaticon.com/512/64/64572.png' class='icon'/>
-    Developer: Huzaifa Shahid
-</div>
-""", unsafe_allow_html=True)
-st.markdown("</div>", unsafe_allow_html=True)
 
 # Footer
 st.markdown("""
