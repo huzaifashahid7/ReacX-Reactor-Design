@@ -24,11 +24,8 @@ st.set_page_config(
 
 # Load custom CSS
 try:
-    with open("style/custom.css") as f:
+    with open("custom.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-except FileNotFoundError:
-    st.warning("⚠️ Custom CSS file not found. Skipping style.")
-
 # Header
 st.markdown("<a id='home'></a>", unsafe_allow_html=True)
 st.markdown("""
