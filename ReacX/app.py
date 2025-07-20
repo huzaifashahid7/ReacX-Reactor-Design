@@ -3,6 +3,17 @@ from components.inputs import get_user_inputs
 from components.calculations import calculate_values
 from components.plot import show_plot
 import streamlit.components.v1 as components
+import streamlit as st
+import os
+
+# ✅ Load custom CSS
+css_file_path = os.path.join(os.path.dirname(_file_), "custom.css")
+
+if os.path.exists(css_file_path):
+    with open(css_file_path) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+else:
+    st.warning("⚠ custom.css file not found. Skipping styles.")
 
 # ✅ Google Analytics integration
 components.html("""
