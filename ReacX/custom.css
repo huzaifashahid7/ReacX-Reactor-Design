@@ -1,0 +1,81 @@
+*{
+    font-family: 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+/* Sidebar improvement */
+.css-1d391kg {  
+    padding: 1rem;
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 0 15px 15px 0;
+}
+
+/* Heading and text improvements */
+h1, h2, h3, h4 {
+    color: #1a73e8;
+}
+
+.stRadio > div {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Card-like appearance for input boxes */
+.stTextInput, .stNumberInput, .stSelectbox, .stSlider {
+    border-radius: 10px !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 0.3rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Button style */
+button[kind="primary"] {
+    background-color: #1a73e8;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+}
+
+/* Responsive container */
+.block-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Make layout adaptive */
+@media (max-width: 768px) {
+    .stRadio > div {
+        flex-direction: column !important;
+    }
+
+    .block-container {
+        padding: 0.5rem;
+    }
+}
+        .main-title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .subheading {
+            font-size: 22px;
+            margin-top: 10px;
+        }
+        .section {
+            padding: 20px;
+        }
+        .contact-item {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .icon {
+            height: 20px;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
